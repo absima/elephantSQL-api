@@ -1,0 +1,28 @@
+GET http://localhost:8080/users
+
+###
+GET http://localhost:8080/users/13
+
+###
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+    "first_name":"me",
+    "last_name":"myself",
+    "age":123
+}
+
+###
+PUT http://localhost:8080/users/4
+Content-Type: application/json
+
+{
+    "first_name":"Lucy",
+    "last_name":"Dinknesh",
+    "age":3200000
+}
+
+
+###
+DELETE http://localhost:8080/users/7
